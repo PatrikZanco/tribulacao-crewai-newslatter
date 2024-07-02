@@ -6,7 +6,7 @@ from newslatter_crypto.crew import NewslatterCryptoCrew
 def run():
     # Replace with your inputs, it will automatically interpolate any tasks and agents information
     inputs = {
-        'topic': 'AI LLMs'
+        'topic': 'list the top ten cryptocurrency movements today (July 2, 2024)'
     }
     NewslatterCryptoCrew().crew().kickoff(inputs=inputs)
 
