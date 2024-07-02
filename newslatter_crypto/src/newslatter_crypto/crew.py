@@ -2,10 +2,16 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
 # Uncomment the following line to use an example of a custom tool
-# from newslatter_crypto.tools.custom_tool import MyCustomTool
+from newslatter_crypto.tools.custom_tool import MyCustomTool
 
 # Check our tools documentations for more information on how to use them
-# from crewai_tools import SerperDevTool
+from crewai_tools import SerperDevTool
+from crewai_tools import ScrapeWebsiteTool
+
+scrape_tool = ScrapeWebsiteTool()
+searche_tool = SerperDevTool()
+
+
 
 @CrewBase
 class NewslatterCryptoCrew():
@@ -18,7 +24,12 @@ class NewslatterCryptoCrew():
 		return Agent(
 			config=self.agents_config['researcher'],
 			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
-			verbose=True
+			verbose=True,
+			tools = [
+				scrape_tool,
+				searche_tool,
+
+			]
 		)
 
 	@agent
@@ -27,6 +38,10 @@ class NewslatterCryptoCrew():
 			config=self.agents_config['reporting_analyst'],
 			verbose=True
 		)
+	
+
+	
+
 
 	@task
 	def research_task(self) -> Task:

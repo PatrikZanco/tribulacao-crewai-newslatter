@@ -13,3 +13,10 @@ reporting_task:
   expected_output: >
     A fully fledge reports with the mains topics, each with a full section of information.
     Formated as markdown with out '```'
+
+translate_task:
+  description: >
+    Translate the information to Brazilian Portuguese
+  expected_output: >
+    A fully translated report in Brazilian Portuguese
+    Formated as markdown with out '```'
