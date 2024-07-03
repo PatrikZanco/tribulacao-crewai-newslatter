@@ -1,18 +1,32 @@
 research_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Coletar e resumir artigos de notícias recentes, imprensa
+    lançamentos e análises de mercado relacionadas ao estoque e
+    sua indústria de criptomoedas e blockchain
+    Preste atenção especial a quaisquer eventos significativos,
+    sentimentos e opiniões dos analistas em cripmoedas. Incluir também os próximos 
+    eventos como ganhos.
+    
+        
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
+    Sua resposta final DEVE ser um relatório que inclua uma
+    resumo abrangente das últimas notícias, qualquer notável
+    mudanças no sentimento do mercado e impactos potenciais sobre o cenário atual de cripmoedas
+
 
 reporting_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Faça uma análise completa da situação financeira das cripmoedas
+    desempenho do mercado atual. 
+    Isso inclui examinar as principais métricas financeiras de cripmoedas, como métricas on-chain, rsi, macd, volume, entre outras.        Além disso, analise o desempenho da criptomoeda em comparação 
+    aos seus pares da indústria e às tendências gerais do mercado.
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formated as markdown with out '```'
+    Seu relatório final DEVE expandir o resumo fornecido
+    mas agora incluindo uma avaliação clara da situação
+    situação financeira, seus pontos fortes e fracos, do cenário atual de criptomoedas
+    Relatórios completos com os principais tópicos, cada um com uma seção completa de informações.
+    Formatado como markdown sem '```'
+
 
 translate_task:
   description: >
